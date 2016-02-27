@@ -1,12 +1,18 @@
 <html>
     <head>
         <title>Non-hamilton graph generator</title>
+        <link rel="stylesheet" href="bootstrap.css">
     </head>
     <body>
-        <input id="amount" type="text" placeholder="Enter amount of vertexes"><br>
-        <button id="btn">Generate non-hamilton graph!</button>
-        <div id="matrixPlace"></div>
-        <canvas id="viewport" width="600" height="600"></canvas>
+        <br><br>
+        <div>
+            <div style="width: 300px; margin-left: auto;  margin-right: auto;">
+                <input id="amount" type="text" placeholder="Введите количество вершин" class="form-control"><br>
+                <button id="btn" class="btn btn-info btn-block">Сгенерировать негамильтонов граф!</button><br><br>
+
+            </div>
+            <canvas id="viewport" width="500" height="500" style="margin-right: auto;"/>
+        </div>
     </body>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>

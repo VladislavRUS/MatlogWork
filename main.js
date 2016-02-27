@@ -9,12 +9,14 @@ function check(value){
             graph[rI][rJ] = 0;
             graph[rJ][rI] = 0;
     } 
-    $("#matrixPlace").append('Was not found!<br>');
+    $("#matrixPlace").append('Graph matrix with no Hamilton cycle!<br>');
     printGraph(graph);
     startGraph();
 }
 
 function printGraph(graph){
+    $("#matrixPlace").html('');
+    $("#matrixPlace").append('Матрица графа: <br>');    
     var n = graph[0].length;
     for(var i = 0; i < n; i++){
         for(var j = 0; j < n; j++){
