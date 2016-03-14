@@ -1,8 +1,8 @@
 var graph;
 function check(value){
+    value++;
     graph = generate(value);
-    var n = graph[0].length;
-    var amount = (n * (n - 1))/2;
+    var n = graph[0].length-1;
     while(hamCycle(graph) === true){
             var rI = Math.floor(Math.random() * (n)) + 0;
             var rJ = Math.floor(Math.random() * (n)) + 0;
