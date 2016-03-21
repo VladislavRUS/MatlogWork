@@ -90,11 +90,11 @@ function startGraph(){
 		sys.renderer = Renderer("#viewport") //начинаем рисовать в выбраной области
         
         //Добавляем все вершины 
-        for(var i = 0; i < graph.length-1; i++)
+        for(var i = 0; i < graph.length; i++)
             sys.addNode(i);
         
         //Добавляем все ребра
-        for(var i = 0; i < graph[0].length-1; i++){
+        for(var i = 0; i < graph[0].length; i++){
             for(var j = 0; j < graph[0].length-1; j++){
                 if(graph[i][j] === 1){
                     sys.addEdge(i, j);

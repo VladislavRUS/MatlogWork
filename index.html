@@ -2,9 +2,13 @@
     <head>
         <title>Non-hamilton graph generator</title>
         <link rel="stylesheet" href="bootstrap.css">
+		<meta charset="utf8"/>
     </head>
     <body>
         <br><br>
+        <div id="place">
+            Render place: 
+        </div>
         <div style="margin-right: auto; margin-left: auto">
             <div style="width: 300px; margin-left: auto;  margin-right: auto;">
                 <input id="amount" type="text" placeholder="Введите количество вершин" class="form-control"><br>
@@ -14,8 +18,8 @@
         </div>
     </body>
     
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <script src="hamilton.js"></script>
+    <script src="jquery-1.11.3.js"></script>
+    <script src="maxindset.js"></script>
     <script src="generator.js"></script>
     <script src="arbor.js"></script>
     <script src="graphRenderer.js"></script>
